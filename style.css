@@ -1,0 +1,463 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #002B7F 33%, #FCD116 33%, #CE1126 66%);
+
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color: #f0c14b;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #283b4d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #f0c14b;
+    color: #1a2a57;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #1a2a57;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #f0c14b;
+    margin: 10px auto;
+}
+
+/* Fixtures Section */
+.season-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.season-selector select {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 1rem;
+}
+
+.fixtures-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.fixtures-table th, .fixtures-table td {
+    padding: 12px 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.fixtures-table th {
+    background-color: #1a2a57;
+    color: white;
+}
+
+.fixtures-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Points Table Section */
+
+
+/* Winners Grid Section */
+.winners-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.winner-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.winner-card:hover {
+    transform: translateY(-5px);
+}
+
+.winner-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.winner-info {
+    padding: 15px;
+}
+
+.winner-info h3 {
+    margin-bottom: 10px;
+    color: #1a2a57;
+}
+
+.winner-info p {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.prize-pool {
+    font-weight: bold;
+    color: #f0c14b !important;
+    font-size: 1.1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a2a57;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .nav-links li {
+        margin: 5px 10px;
+    }
+
+    .fixtures-table, .points-table {
+        display: block;
+        overflow-x: auto;
+    }
+
+    .winners-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .nav-links li {
+        margin: 5px;
+    }
+
+    .winners-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #002B7F 33%, #FCD116 33%, #CE1126 66%);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.logo span {
+    color: #f0c14b;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #283b4d;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin: 5px 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    background-color: #f0c14b;
+    color: #1a2a57;
+}
+
+/* Main Content Styles */
+main {
+    padding: 20px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1a2a57;
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #f0c14b;
+    margin: 10px auto;
+}
+
+/* Table Container */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    margin-bottom: 30px;
+}
+
+/* Points Table */
+.points-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 0.9rem;
+}
+
+.points-table th, .points-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.points-table th {
+    background-color: #1a2a57;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.points-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.team-logo {
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Highlighting classes */
+.champion {
+    background-color: rgba(0, 200, 0, 0.1);
+    font-weight: bold;
+}
+
+.europe {
+    background-color: rgba(0, 150, 255, 0.1);
+}
+
+.mid-table {
+    background-color: rgba(255, 255, 0, 0.1);
+}
+
+.relegation {
+    background-color: rgba(255, 0, 0, 0.1);
+}
+
+/* Season Selector */
+.season-selector {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.season-selector select {
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    background-color: white;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #1a2a57;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 0.9rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .points-table {
+        font-size: 0.8rem;
+    }
+    
+    .points-table th, .points-table td {
+        padding: 8px 5px;
+    }
+    
+    .team-logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .logo {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .points-table {
+        font-size: 0.7rem;
+    }
+    
+    .points-table th, .points-table td {
+        padding: 6px 3px;
+    }
+}
+
+
+
+
+
+/* Alternative method for AASHISH row highlighting */
+
+.champion-aashish .team-name::before {
+  content: " 👑";
+  font-size: 0.8rem;
+  color: #ffd700;
+  margin-left: 5px;
+}
