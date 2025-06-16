@@ -41,10 +41,10 @@ const season4Teams = [
   { name: "PARU DAI", mp: 4, w: 4, d: 0, l: 0, gf: 9, ga: 1, gd: 8, pts: 12 },
   { name: "RAAJ", mp: 6, w: 1, d: 2, l: 3, gf: 6, ga: 11, gd: -5, pts: 2 },
   { name: "ANISH", mp: 5, w: 1, d: 2, l: 2, gf: 9, ga: 12, gd: -3, pts: 5 },
-  { name: "DEV", mp: 5, w: 0, d: 1, l: 4, gf: 7, ga: 16, gd: -9, pts: 1 },
+  { name: "DEV", mp: 6, w: 0, d: 1, l: 5, gf: 8, ga: 20, gd: -12, pts: 1 },
   { name: "BIKASH", mp: 3, w: 1, d: 1, l: 1, gf: 2, ga: 4, gd: -2, pts: 4 },
   { name: "ASAL", mp: 5, w: 3, d: 2, l: 0, gf: 17, ga: 10, gd: 7, pts: 11 }, // ASAL has 1 point
-  { name: "BINAYA", mp: 3, w: 0, d: 1, l: 2, gf: 6, ga: 13, gd: -7, pts: 1 },
+  { name: "BINAYA", mp: 4, w: 1, d: 1, l: 2, gf: 10, ga: 14, gd: -4, pts: 4 },
 ]
 
 // Function to sort teams according to football rules
