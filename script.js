@@ -38,9 +38,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const season4Teams = [
   { name: "AASHISH", mp: 9, w: 4, d: 3, l: 2, gf: 28, ga: 15, gd: 13, pts: 15 },
   { name: "ANJAN", mp: 9, w: 3, d: 4, l: 2, gf: 22, ga: 16, gd: 6, pts: 13 },
-  { name: "PARU DAI", mp: 8, w: 7, d: 1, l: 0, gf: 17, ga: 6, gd: 11, pts: 22 },
+  { name: "PARU DAI", mp: 9, w: 8, d: 1, l: 0, gf: 20, ga: 6, gd: 14, pts: 25 },
   { name: "RAAJ", mp: 9, w: 1, d: 3, l: 5, gf: 9, ga: 20, gd: -11, pts: 6 },
-  { name: "ANISH", mp: 8, w: 2, d: 2, l: 4, gf: 13, ga: 18, gd: -5, pts: 8 },
+  { name: "ANISH", mp: 9, w: 2, d: 2, l: 5, gf: 13, ga: 21, gd: -8, pts: 8 },
   { name: "DEV", mp: 10, w: 4, d: 1, l: 5, gf: 18, ga: 26, gd: -8, pts: 13 },
   { name: "BIKASH", mp: 9, w: 1, d: 1, l: 7, gf: 4, ga: 15, gd: -11, pts: 4 },
   { name: "ASAL", mp: 8, w: 4, d: 3, l: 1, gf: 22, ga: 15, gd: 7, pts: 15 }, // ASAL has 1 point
