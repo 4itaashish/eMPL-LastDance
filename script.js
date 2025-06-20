@@ -38,8 +38,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const season4Teams = [
   { name: "AASHISH", mp: 10, w: 5, d: 3, l: 2, gf: 31, ga: 16, gd: 15, pts: 18 },
   { name: "ANJAN", mp: 10, w: 3, d: 5, l: 2, gf: 24, ga: 18, gd: 6, pts: 14 },
-  { name: "PARU DAI", mp: 9, w: 8, d: 1, l: 0, gf: 20, ga: 6, gd: 14, pts: 25 },
-  { name: "RAAJ", mp: 11, w: 2, d: 3, l: 6, gf: 13, ga: 25, gd: -12, pts: 9 },
+  { name: "PARU DAI", mp: 10, w: 8, d: 1, l: 1, gf: 20, ga: 7, gd: 13, pts: 25 },
+  { name: "RAAJ", mp: 12, w: 3, d: 3, l: 6, gf: 14, ga: 25, gd: -11, pts: 12 },
   { name: "ANISH", mp: 12, w: 3, d: 2, l: 7, gf: 18, ga: 27, gd: -9, pts: 11 },
   { name: "DEV", mp: 11, w: 4, d: 1, l: 6, gf: 20, ga: 29, gd: -9, pts: 13 },
   { name: "BIKASH", mp: 9, w: 1, d: 1, l: 7, gf: 4, ga: 15, gd: -11, pts: 4 },
