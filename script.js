@@ -39,10 +39,10 @@ const season4Teams = [
   { name: "AASHISH", mp: 13, w: 8, d: 3, l: 2, gf: 45, ga: 19, gd: 26, pts: 27 },
   { name: "ANJAN", mp: 12, w: 5, d: 5, l: 2, gf: 30, ga: 21, gd: 9, pts: 20 },
   { name: "PARU DAI", mp: 13, w: 9, d: 1, l: 3, gf: 30, ga: 11, gd: 19, pts: 28 },
-  { name: "RAAJ", mp: 14, w: 4, d: 3, l: 7, gf: 19, ga: 32, gd: -13, pts: 15 },
+  { name: "RAAJ", mp: 15, w: 4, d: 4, l: 7, gf: 20, ga: 33, gd: -13, pts: 16 },
   { name: "ANISH", mp: 14, w: 3, d: 2, l: 9, gf: 19, ga: 32, gd: -13, pts: 11 },
   { name: "DEV", mp: 13, w: 5, d: 1, l: 7, gf: 22, ga: 31, gd: -9, pts: 16 },
-  { name: "BIKASH", mp: 12, w: 1, d: 1, l: 10, gf: 7, ga: 31, gd: -24, pts: 4 },
+  { name: "BIKASH", mp: 13, w: 1, d: 2, l: 10, gf: 8, ga: 32, gd: -24, pts: 5 },
   { name: "ASAL", mp: 13, w: 7, d: 4, l: 2, gf: 30, ga: 22, gd: 8, pts: 25 }, // ASAL has 1 point
   { name: "BINAYA", mp: 14, w: 5, d: 4, l: 5, gf: 28, ga: 31, gd: -3, pts: 19 },
 ]
