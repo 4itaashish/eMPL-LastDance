@@ -36,8 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 4 team data - EDIT THESE VALUES TO UPDATE POINTS TABLE
 const season4Teams = [
-  { name: "AASHISH", mp: 13, w: 8, d: 3, l: 2, gf: 45, ga: 19, gd: 26, pts: 27 },
-  { name: "ANJAN", mp: 12, w: 5, d: 5, l: 2, gf: 30, ga: 21, gd: 9, pts: 20 },
+  { name: "AASHISH", mp: 14, w: 8, d: 3, l: 3, gf: 47, ga: 22, gd: 25, pts: 27 },
+  { name: "ANJAN", mp: 13, w: 6, d: 5, l: 2, gf: 33, ga: 23, gd: 10, pts: 23 },
   { name: "PARU DAI", mp: 13, w: 9, d: 1, l: 3, gf: 30, ga: 11, gd: 19, pts: 28 },
   { name: "RAAJ", mp: 15, w: 4, d: 4, l: 7, gf: 20, ga: 33, gd: -13, pts: 16 },
   { name: "ANISH", mp: 14, w: 3, d: 2, l: 9, gf: 19, ga: 32, gd: -13, pts: 11 },
