@@ -37,13 +37,13 @@ document.addEventListener("DOMContentLoaded", () => {
 // Season 4 team data - EDIT THESE VALUES TO UPDATE POINTS TABLE
 const season4Teams = [
   { name: "AASHISH", mp: 14, w: 8, d: 3, l: 3, gf: 47, ga: 22, gd: 25, pts: 27 },
-  { name: "ANJAN", mp: 13, w: 6, d: 5, l: 2, gf: 33, ga: 23, gd: 10, pts: 23 },
+  { name: "ANJAN", mp: 14, w: 7, d: 5, l: 2, gf: 37, ga: 25, gd: 12, pts: 26 },
   { name: "PARU DAI", mp: 13, w: 9, d: 1, l: 3, gf: 30, ga: 11, gd: 19, pts: 28 },
   { name: "RAAJ", mp: 15, w: 4, d: 4, l: 7, gf: 20, ga: 33, gd: -13, pts: 16 },
   { name: "ANISH", mp: 14, w: 3, d: 2, l: 9, gf: 19, ga: 32, gd: -13, pts: 11 },
   { name: "DEV", mp: 13, w: 5, d: 1, l: 7, gf: 22, ga: 31, gd: -9, pts: 16 },
   { name: "BIKASH", mp: 13, w: 1, d: 2, l: 10, gf: 8, ga: 32, gd: -24, pts: 5 },
-  { name: "ASAL", mp: 13, w: 7, d: 4, l: 2, gf: 30, ga: 22, gd: 8, pts: 25 }, // ASAL has 1 point
+  { name: "ASAL", mp: 14, w: 7, d: 4, l: 3, gf: 32, ga: 26, gd: 6, pts: 25 }, // ASAL has 1 point
   { name: "BINAYA", mp: 14, w: 5, d: 4, l: 5, gf: 28, ga: 31, gd: -3, pts: 19 },
 ]
 
