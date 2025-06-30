@@ -450,6 +450,27 @@ footer {
 }
 
 
+.groups-container h3 {
+    text-align: center;
+    margin: 15px 0;
+    color: #1a2a57;
+    font-size: 1.2rem;
+}
+
+.table-container {
+    margin-bottom: 30px;
+}
+
+@media (min-width: 768px) {
+    .groups-container {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .table-container {
+        flex: 1;
+    }
+}
 
 
 

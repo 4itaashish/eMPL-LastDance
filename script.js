@@ -2,7 +2,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const currentPage = window.location.pathname.split("/").pop()
   const navLinks = document.querySelectorAll(".nav-links a")
-
   navLinks.forEach((link) => {
     const linkPage = link.getAttribute("href")
     if (currentPage === linkPage || (currentPage === "" && linkPage === "index.html")) {
@@ -12,96 +11,28 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   })
 
-  // Season selector functionality
-  const seasonSelectors = document.querySelectorAll(".season-selector select")
-  seasonSelectors.forEach((selector) => {
-    selector.addEventListener("change", function () {
-      const selectedSeason = this.value
-      const section = this.closest("section").id
-
-      if (section === "fixtures") {
-        loadFixtures(selectedSeason)
-      } else if (section === "points-table") {
-        loadPointsTable(selectedSeason)
-      } else if (section === "winners") {
-        loadWinners(selectedSeason)
-      }
-    })
-  })
-
   // Initialize with current season data
   loadFixtures("2026")
   loadPointsTable("2026")
 })
 
-// Season 4 team data - EDIT THESE VALUES TO UPDATE POINTS TABLE
-const season4Teams = [
-  { name: "AASHISH", mp: 16, w: 9, d: 3, l: 4, gf: 51, ga: 25, gd: 26, pts: 30 },
-  { name: "ANJAN", mp: 16, w: 7, d: 5, l: 4, gf: 37, ga: 27, gd: 10, pts: 26 },
-  { name: "PARU DAI", mp: 16, w: 11, d: 1, l: 4, gf: 34, ga: 12, gd: 22, pts: 34 },
-  { name: "RAAJ", mp: 16, w: 4, d: 4, l: 8, gf: 20, ga: 33, gd: -13, pts: 16 },
-  { name: "ANISH", mp: 16, w: 3, d: 3, l: 10, gf: 20, ga: 36, gd: -16, pts: 12 },
-  { name: "DEV", mp: 16, w: 6, d: 1, l: 9, gf: 25, ga: 31, gd: -6, pts: 19 },
-  { name: "BIKASH", mp: 16, w: 1, d: 3, l: 12, gf: 10, ga: 38, gd: -28, pts: 6 },
-  { name: "ASAL", mp: 16, w: 8, d: 4, l: 4, gf: 38, ga: 30, gd: 8, pts: 28 }, // ASAL has 1 point
-  { name: "BINAYA", mp: 16, w: 5, d: 4, l: 7, gf: 28, ga: 31, gd: -3, pts: 19 },
-]
+// Season 5 team data - Group A
+const season5TeamsA = [
+  { name: "AASHISH", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "ANISH", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "KUSHAL", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "DEV", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "THAKUR", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+];
 
-// Function to sort teams according to football rules
-function sortTeamsByFootballRules(teams) {
-  return teams.sort((a, b) => {
-    // 1. Points (descending)
-    if (b.pts !== a.pts) return b.pts - a.pts
-    // 2. Goal difference (descending)
-    if (b.gd !== a.gd) return b.gd - a.gd
-    // 3. Goals for (descending)
-    if (b.gf !== a.gf) return b.gf - a.gf
-    // 4. Alphabetical order (ascending)
-    return a.name.localeCompare(b.name)
-  })
-}
-
-// Function to get position class for styling
-function getPositionClass(position) {
-  if (position === 1) return "champion"
-  if (position <= 4) return "europe"
-  if (position >= 8) return "relegation"
-  return "mid-table"
-}
-
-// Function to update Season 4 points table
-function updateSeason4Table() {
-  const tbody = document.getElementById("season4-standings")
-  if (!tbody) return
-
-  // Sort teams according to football rules
-  const sortedTeams = sortTeamsByFootballRules([...season4Teams])
-
-  // Clear existing content
-  tbody.innerHTML = ""
-
-  // Generate new table rows
-  sortedTeams.forEach((team, index) => {
-    const position = index + 1
-    const row = document.createElement("tr")
-    row.className = getPositionClass(position)
-
-    row.innerHTML = `
-      <td>${position}</td>
-      <td class="team-name">${team.name}</td>
-      <td>${team.mp}</td>
-      <td>${team.w}</td>
-      <td>${team.d}</td>
-      <td>${team.l}</td>
-      <td>${team.gf}</td>
-      <td>${team.ga}</td>
-      <td>${team.gd > 0 ? "+" + team.gd : team.gd}</td>
-      <td><strong>${team.pts}</strong></td>
-    `
-
-    tbody.appendChild(row)
-  })
-}
+// Season 5 team data - Group B
+const season5TeamsB = [
+  { name: "ASAL", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "RAAJ", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "PARU DAI", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "BINAYA", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "ANJAN", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+];
 
 // Season 2 team data for reference
 const season2Teams = [
@@ -133,12 +64,34 @@ const season3GroupB = [
   { name: "BINAYA", mp: 8, w: 1, d: 0, l: 7, gf: 5, ga: 24, gd: -19, pts: 3 },
 ]
 
+// Function to sort teams according to football rules
+function sortTeamsByFootballRules(teams) {
+  return teams.sort((a, b) => {
+    // 1. Points (descending)
+    if (b.pts !== a.pts) return b.pts - a.pts
+    // 2. Goal difference (descending)
+    if (b.gd !== a.gd) return b.gd - a.gd
+    // 3. Goals for (descending)
+    if (b.gf !== a.gf) return b.gf - a.gf
+    // 4. Alphabetical order (ascending)
+    return a.name.localeCompare(b.name)
+  })
+}
+
+// Function to get position class for styling
+function getPositionClass(position) {
+  if (position === 1) return "champion"
+  if (position <= 2) return "europe"
+  if (position >= 4) return "relegation"
+  return "mid-table"
+}
+
 function loadFixtures(season) {
   const fixturesBody = document.getElementById("fixtures-body")
   if (!fixturesBody) return
 
   if (season === "2026") {
-    // Season 4 fixtures are already in the HTML
+    // Season 5 fixtures are already in the HTML
     return
   } else if (season === "2022") {
     // Load Season 2 fixtures
@@ -154,127 +107,163 @@ function loadFixtures(season) {
 
 function loadPointsTable(season) {
   if (season === "2026") {
-    // Season 4 - Show dynamic table using season4Teams array
-    updateSeason4Table()
+    // Season 5 - Show group tables
+    updateSeason5GroupTables();
   } else if (season === "2025") {
     // Season 3 - groups
-    updateGroupStandings()
+    updateSeason3GroupTables();
   } else if (season === "2022") {
     // Show Season 2 single table
-    showSeason2Table()
+    showSeason2Table();
   } else {
     // Show placeholder for Season 1
-    showPlaceholderTable()
+    showPlaceholderTable();
   }
 }
 
-function updateGroupStandings() {
-  const groupABody = document.getElementById("group-a-standings")
-  const groupBBody = document.getElementById("group-b-standings")
-
+// Fixed function to update Season 5 group tables
+function updateSeason5GroupTables() {
+  const groupABody = document.getElementById("group-a-standings");
+  const groupBBody = document.getElementById("group-b-standings");
+  
   if (groupABody) {
-    updateGroupTable(groupABody, season3GroupA)
+    updateGroupTable(groupABody, season5TeamsA);
   }
-
   if (groupBBody) {
-    updateGroupTable(groupBBody, season3GroupB)
+    updateGroupTable(groupBBody, season5TeamsB);
+  }
+}
+
+// Fixed function to update Season 3 group tables
+function updateSeason3GroupTables() {
+  // First, make sure we have the group structure
+  const groupsContainer = document.querySelector(".groups-container");
+  if (groupsContainer) {
+    groupsContainer.innerHTML = `
+      <div class="table-container">
+        <h3>Group A</h3>
+        <table class="points-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>MP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody id="season3-group-a"></tbody>
+        </table>
+      </div>
+      <div class="table-container">
+        <h3>Group B</h3>
+        <table class="points-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>MP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody id="season3-group-b"></tbody>
+        </table>
+      </div>
+    `;
+    
+    const groupABody = document.getElementById("season3-group-a");
+    const groupBBody = document.getElementById("season3-group-b");
+    
+    if (groupABody) {
+      updateGroupTable(groupABody, season3GroupA);
+    }
+    if (groupBBody) {
+      updateGroupTable(groupBBody, season3GroupB);
+    }
   }
 }
 
 function updateGroupTable(tbody, teams) {
-  const sortedTeams = teams.sort((a, b) => {
-    if (b.pts !== a.pts) return b.pts - a.pts
-    if (b.gd !== a.gd) return b.gd - a.gd
-    return b.gf - a.gf
-  })
-
-  tbody.innerHTML = ""
+  const sortedTeams = sortTeamsByFootballRules([...teams]);
+  tbody.innerHTML = "";
+  
   sortedTeams.forEach((team, index) => {
-    const row = document.createElement("tr")
-
-    if (index === 0) {
-      row.classList.add("champion")
-    } else if (index === 1) {
-      row.classList.add("europe")
-    } else {
-      row.classList.add("mid-table")
-    }
-
+    const row = document.createElement("tr");
+    const position = index + 1;
+    row.className = getPositionClass(position);
+    
     row.innerHTML = `
-            <td>${index + 1}</td>
-            <td class="team-name">${team.name}</td>
-            <td>${team.mp}</td>
-            <td>${team.w}</td>
-            <td>${team.d}</td>
-            <td>${team.l}</td>
-            <td>${team.gf}</td>
-            <td>${team.ga}</td>
-            <td>${team.gd}</td>
-            <td><strong>${team.pts}</strong></td>
-        `
-
-    tbody.appendChild(row)
-  })
+      <td>${position}</td>
+      <td class="team-name">${team.name}</td>
+      <td>${team.mp}</td>
+      <td>${team.w}</td>
+      <td>${team.d}</td>
+      <td>${team.l}</td>
+      <td>${team.gf}</td>
+      <td>${team.ga}</td>
+      <td>${team.gd > 0 ? "+" + team.gd : team.gd}</td>
+      <td><strong>${team.pts}</strong></td>
+    `;
+    tbody.appendChild(row);
+  });
 }
 
 function showSeason2Table() {
   const groupsContainer = document.querySelector(".groups-container")
   if (groupsContainer) {
     groupsContainer.innerHTML = `
-            <div class="table-container">
-                <table class="points-table">
-                    <thead>
-                        <tr>
-                            <th>Rank</th>
-                            <th>Team</th>
-                            <th>MP</th>
-                            <th>W</th>
-                            <th>D</th>
-                            <th>L</th>
-                            <th>GF</th>
-                            <th>GA</th>
-                            <th>GD</th>
-                            <th>Pts</th>
-                        </tr>
-                    </thead>
-                    <tbody id="season2-standings"></tbody>
-                </table>
-            </div>
-        `
+      <div class="table-container">
+        <table class="points-table">
+          <thead>
+            <tr>
+              <th>Rank</th>
+              <th>Team</th>
+              <th>MP</th>
+              <th>W</th>
+              <th>D</th>
+              <th>L</th>
+              <th>GF</th>
+              <th>GA</th>
+              <th>GD</th>
+              <th>Pts</th>
+            </tr>
+          </thead>
+          <tbody id="season2-standings"></tbody>
+        </table>
+      </div>
+    `
 
     const tbody = document.getElementById("season2-standings")
-    const sortedTeams = season2Teams.sort((a, b) => {
-      if (b.pts !== a.pts) return b.pts - a.pts
-      if (b.gd !== a.gd) return b.gd - a.gd
-      return b.gf - a.gf
-    })
+    const sortedTeams = sortTeamsByFootballRules([...season2Teams]);
 
     sortedTeams.forEach((team, index) => {
       const row = document.createElement("tr")
-
-      if (index === 0) {
-        row.classList.add("champion")
-      } else if (index < 4) {
-        row.classList.add("europe")
-      } else if (index > 5) {
-        row.classList.add("relegation")
-      } else {
-        row.classList.add("mid-table")
-      }
+      const position = index + 1;
+      row.className = getPositionClass(position);
 
       row.innerHTML = `
-                <td>${index + 1}</td>
-                <td class="team-name">${team.name}</td>
-                <td>${team.mp}</td>
-                <td>${team.w}</td>
-                <td>${team.d}</td>
-                <td>${team.l}</td>
-                <td>${team.gf}</td>
-                <td>${team.ga}</td>
-                <td>${team.gd}</td>
-                <td><strong>${team.pts}</strong></td>
-            `
-
+        <td>${position}</td>
+        <td class="team-name">${team.name}</td>
+        <td>${team.mp}</td>
+        <td>${team.w}</td>
+        <td>${team.d}</td>
+        <td>${team.l}</td>
+        <td>${team.gf}</td>
+        <td>${team.ga}</td>
+        <td>${team.gd > 0 ? "+" + team.gd : team.gd}</td>
+        <td><strong>${team.pts}</strong></td>
+      `
       tbody.appendChild(row)
     })
   }
@@ -296,41 +285,41 @@ function loadWinners(season) {
     return
   } else if (season === "2023") {
     winnersGrid.innerHTML = `
-            <div class="winner-card">
-                <img src="/placeholder.svg?height=200&width=300" alt="AASHISH Season 1" class="winner-image">
-                <div class="winner-info">
-                    <h3>AASHISH</h3>
-                    <p>Season: 1</p>
-                    <p>Format: OGP</p>
-                    <p class="prize-pool">Prize Pool: $550</p>
-                </div>
-            </div>
-        `
+      <div class="winner-card">
+        <img src="./aashish1.jpeg" alt="AASHISH Season 1" class="winner-image">
+        <div class="winner-info">
+          <h3>AASHISH</h3>
+          <p>Season: 1</p>
+          <p>Format: OGP</p>
+          <p class="prize-pool">Prize Pool: $550</p>
+        </div>
+      </div>
+    `
   } else if (season === "2022") {
     winnersGrid.innerHTML = `
-            <div class="winner-card">
-                <img src="/placeholder.svg?height=200&width=300" alt="DEV Season 2" class="winner-image">
-                <div class="winner-info">
-                    <h3>DEV</h3>
-                    <p>Season: 2</p>
-                    <p>Format: League</p>
-                    <p class="prize-pool">Prize Pool: $750</p>
-                </div>
-            </div>
-        `
+      <div class="winner-card">
+        <img src="./aashish1.jpeg" alt="DEV Season 2" class="winner-image">
+        <div class="winner-info">
+          <h3>DEV</h3>
+          <p>Season: 2</p>
+          <p>Format: League</p>
+          <p class="prize-pool">Prize Pool: $750</p>
+        </div>
+      </div>
+    `
   } else if (season === "2026") {
     winnersGrid.innerHTML = `
-            <div class="winner-card upcoming">
-                <img src="/placeholder.svg?height=200&width=300" alt="Season 3 TBD" class="winner-image">
-                <div class="winner-info">
-                    <h3>TBD</h3>
-                    <p>Season: 3</p>
-                    <p>Format: Group Stage</p>
-                    <p class="prize-pool">Prize Pool: $1000</p>
-                    <p class="status">Tournament in Progress</p>
-                </div>
-            </div>
-        `
+      <div class="winner-card upcoming">
+        <img src="./aashish1.jpeg" alt="Season 5 TBD" class="winner-image">
+        <div class="winner-info">
+          <h3>TBD</h3>
+          <p>Season: 5</p>
+          <p>Format: Group Stage</p>
+          <p class="prize-pool">Prize Pool: $1000</p>
+          <p class="status">Tournament in Progress</p>
+        </div>
+      </div>
+    `
   }
 }
 
@@ -346,7 +335,7 @@ function highlightAashishMatches() {
   })
 
   // Highlight in points table
-  const pointsRows = document.querySelectorAll("#season4-standings tr, .points-table tbody tr")
+  const pointsRows = document.querySelectorAll(".points-table tbody tr")
   pointsRows.forEach((row) => {
     const teamCell = row.querySelector(".team-name")
     if (teamCell && teamCell.textContent.includes("AASHISH")) {
@@ -355,14 +344,7 @@ function highlightAashishMatches() {
   })
 }
 
-// Call the highlight function after table updates
-const originalUpdateSeason4Table = updateSeason4Table
-updateSeason4Table = () => {
-  originalUpdateSeason4Table()
-  setTimeout(highlightAashishMatches, 100) // Small delay to ensure DOM is updated
-}
-
-// Also call on page load
+// Call highlight function after DOM loads
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(highlightAashishMatches, 500)
 })
