@@ -20,8 +20,8 @@ document.addEventListener("DOMContentLoaded", () => {
 const season5TeamsA = [
   { name: "AASHISH", mp: 2, w: 2, d: 0, l: 0, gf: 4, ga: 1, gd: 3, pts: 6 },
   { name: "ANISH", mp: 3, w: 0, d: 0, l: 3, gf: 4, ga: 8, gd: -4, pts: 0 },
-  { name: "KUSHAL", mp: 1, w: 1, d: 0, l: 0, gf: 3, ga: 0, gd: 3, pts: 3 },
-  { name: "DEV", mp: 1, w: 0, d: 0, l: 1, gf: 0, ga: 2, gd: -2, pts: 0 },
+  { name: "KUSHAL", mp: 2, w: 2, d: 0, l: 0, gf: 9, ga: 1, gd: 8, pts: 6 },
+  { name: "DEV", mp: 2, w: 0, d: 0, l: 2, gf: 1, ga: 8, gd: -7, pts: 0 },
   { name: "ASAL", mp: 1, w: 0, d: 0, l: 1, gf: 1, ga: 3, gd: -2, pts: 0 },
   { name: "RAAJ", mp: 3, w: 2, d: 0, l: 1, gf: 7, ga: 8, gd: -1, pts: 6 },
   { name: "PARU DAI", mp: 2, w: 1, d: 0, l: 1, gf: 5, ga: 4, gd: 1, pts: 3 },
