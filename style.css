@@ -477,8 +477,9 @@ footer {
 /* Alternative method for AASHISH row highlighting */
 
 .champion-aashish .team-name::before {
-  content: " 👑";
+  content: " ";
   font-size: 0.8rem;
   color: #ffd700;
   margin-left: 5px;
 }
+
