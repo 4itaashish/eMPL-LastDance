@@ -26,7 +26,7 @@ const season5TeamsA = [
   { name: "ANJAN", mp: 6, w: 1, d: 1, l: 4, gf: 10, ga: 20, gd: -10, pts: 4 },
   { name: "DEV", mp: 6, w: 0, d: 2, l: 4, gf: 6, ga: 18, gd: -12, pts: 2 },
   { name: "BIKASH", mp: 4, w: 1, d: 0, l: 3, gf: 9, ga: 20, gd: -11, pts: 3 },
-  { name: "RAAJ", mp: 5, w: 4, d: 0, l: 2, gf: 12, ga: 4, gd: 8, pts: 12 },
+  { name: "RAAJ", mp: 5, w: 4, d: 0, l: 1, gf: 12, ga: 4, gd: 8, pts: 12 },
 ];
 
 // Season 5 team data - Group B
