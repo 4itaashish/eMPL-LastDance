@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 5 team data - Group A
 const season5TeamsA = [
-  { name: "AASHISH", mp: 9, w: 8, d: 0, l: 1, gf: 46, ga: 8, gd: 38, pts: 24 },
-  { name: "ANISH", mp: 9, w: 7, d: 0, l: 2, gf: 29, ga: 18, gd: 11, pts: 21 },
+  { name: "AASHISH", mp: 10, w: 9, d: 0, l: 1, gf: 52, ga: 11, gd: 41, pts: 27 },
+  { name: "ANISH", mp: 10, w: 7, d: 0, l: 3, gf: 32, ga: 24, gd: 8, pts: 21 },
   { name: "BINAYA", mp: 9, w: 4, d: 1, l: 4, gf: 23, ga: 28, gd: -5, pts: 13 },
   { name: "PARU DAI", mp: 9, w: 3, d: 1, l: 5, gf: 13, ga: 19, gd: -6, pts: 10 },
   { name: "SUNIL", mp: 9, w: 2, d: 3, l: 4, gf: 23, ga: 31, gd: -8, pts: 9 },
@@ -348,6 +348,7 @@ function highlightAashishMatches() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(highlightAashishMatches, 500)
 })
+
 
 
 
