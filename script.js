@@ -25,8 +25,8 @@ const season5TeamsA = [
   { name: "SUNIL", mp: 14, w: 3, d: 4, l: 7, gf: 32, ga: 50, gd: -18, pts: 13 },
   { name: "ANJAN", mp: 15, w: 8, d: 1, l: 6, gf: 40, ga: 37, gd: 3, pts: 25 },
   { name: "DEV", mp: 13, w: 4, d: 4, l: 5, gf: 29, ga: 33, gd: -4, pts: 16 },
-  { name: "BIKASH", mp: 13, w: 3, d: 0, l: 10, gf: 31, ga: 58, gd: -27, pts: 9 },
-  { name: "RAAJ", mp: 14, w: 5, d: 3, l: 6, gf: 31, ga: 26, gd: 5, pts: 18 },
+  { name: "BIKASH", mp: 14, w: 3, d: 1, l: 10, gf: 32, ga: 59, gd: -27, pts: 10 },
+  { name: "RAAJ", mp: 15, w: 5, d: 4, l: 6, gf: 32, ga: 27, gd: 5, pts: 19 },
 ];
 
 // Season 5 team data - Group B
@@ -348,6 +348,7 @@ function highlightAashishMatches() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(highlightAashishMatches, 500)
 })
+
 
 
 
