@@ -21,10 +21,10 @@ const season5TeamsA = [
   { name: "AASHISH", mp: 2, w: 2, d: 0, l: 0, gf: 8, ga: 3, gd: 5, pts: 6 },
   { name: "ANISH", mp: 1, w: 0, d: 0, l: 1, gf: 1, ga: 2, gd: -1, pts: 0 },,
   { name: "SUNIL", mp: 3, w: 0, d: 0, l: 3, gf: 2, ga: 10, gd: -8, pts: 0 },
-  { name: "ANJAN", mp: 1, w: 1, d: 0, l: 0, gf: 2, ga: 1, gd: 1, pts: 3 },
+  { name: "ANJAN", mp: 2, w: 2, d: 0, l: 0, gf: 7, ga: 4, gd: 3, pts: 6 },
   { name: "DEV", mp: 1, w: 0, d: 0, l: 1, gf: 2, ga: 3, gd: -1, pts: 0 },
   { name: "BIKASH", mp: 1, w: 1, d: 0, l: 0, gf: 4, ga: 3, gd: 1, pts: 3 },
-  { name: "RAAJ", mp: 2, w: 1, d: 0, l: 1, gf: 4, ga: 4, gd: 0, pts: 3 },
+  { name: "RAAJ", mp: 3, w: 1, d: 0, l: 2, gf: 7, ga: 9, gd: -2, pts: 3 },
   { name: "BINAYA", mp: 1, w: 0, d: 0, l: 1, gf: 3, ga: 4, gd: -1, pts: 0 },
   { name: "PARU DAI", mp: 2, w: 2, d: 0, l: 0, gf: 7, ga: 3, gd: 4, pts: 6 },
 ];
