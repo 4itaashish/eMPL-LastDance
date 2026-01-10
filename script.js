@@ -20,13 +20,13 @@ document.addEventListener("DOMContentLoaded", () => {
 const season5TeamsA = [
   { name: "AASHISH", mp: 16, w: 11, d: 2, l: 3, gf: 51, ga: 26, gd: 25, pts: 35 },
   { name: "ANISH", mp: 14, w: 5, d: 0, l: 9, gf: 29, ga: 41, gd: -12, pts: 15 },,
-  { name: "SUNIL", mp: 14, w: 1, d: 0, l: 13, gf: 22, ga: 59, gd: -37, pts: 3 },
-  { name: "ANJAN", mp: 14, w: 4, d: 2, l: 8, gf: 20, ga: 33, gd: -13, pts: 14 },
+  { name: "SUNIL", mp: 15, w: 2, d: 0, l: 13, gf: 25, ga: 59, gd: -34, pts: 6 },
+  { name: "ANJAN", mp: 16, w: 4, d: 2, l: 10, gf: 20, ga: 39, gd: -19, pts: 14 },
   { name: "DEV", mp: 15, w: 7, d: 2, l: 6, gf: 47, ga: 38, gd: 9, pts: 23 },
   { name: "BIKASH", mp: 14, w: 6, d: 2, l: 6, gf: 40, ga: 45, gd: -5, pts: 20 },
   { name: "RAAJ", mp: 16, w: 6, d: 4, l: 6, gf: 37, ga: 42, gd: -5, pts: 22 },
   { name: "BINAYA", mp: 16, w: 9, d: 2, l: 5, gf: 49, ga: 31, gd: 18, pts: 29 },
-  { name: "PARU DAI", mp: 15, w: 10, d: 2, l: 3, gf: 51, ga: 32, gd: 19, pts: 32 },
+  { name: "PARU DAI", mp: 16, w: 11, d: 2, l: 3, gf: 54, ga: 32, gd: 22, pts: 35 },
 ];
 
 // Season 5 team data - Group B
