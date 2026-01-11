@@ -1,3 +1,4 @@
+<!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,9 +32,7 @@
             <div class="season-selector">
                 <label for="fixtures-season">Select Season: </label>
                 <select id="fixtures-season">
-                    <!-- <option value="2023">SEASON 1</option>
-                    <option value="2022">SEASON 2</option>
-                    <option value="2025" >SEASON 3</option> -->
+                    
                     <option value="2026" selected>SEASON 8</option>
                     
                 </select>
@@ -488,7 +487,7 @@
                 
 
                     
-                    <!--
+             
 
 
                      <h2>DECEMBER 02</h2>
@@ -516,7 +515,7 @@
                 <div><br>3-1<br></div>
                 <div>ANJAN</div>
             </div>
--->
+
                 </tbody>
             </table>
         </section>
@@ -532,7 +531,147 @@
 </body>
 </html>
 
-
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            font-family: Arial, sans-serif;
+        }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        td {
+            border: 1px solid #ddd;
+            padding: 15px;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .match-cell {
+            background-color: #f8f9fa;
+            font-weight: bold;
+            min-width: 200px;
+        }
+        .winner-cell {
+            background-color: #e8f5e9;
+            color: #2e7d32;
+            font-weight: bold;
+        }
+        .empty-row {
+            height: 60px;
+        }
+        .round-title {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        h2 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 30px;
+        }
+        .container {
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>MANAKAMANA PREMIERE LEAGUE - KNOCKOUT PLAYOFFS 2025-26</h2>
+        
+        <table>
+            <tr>
+                <th colspan="3">MPL PLAYOFF BRACKET</th>
+            </tr>
+            
+            <!-- ELIMINATOR ROUND -->
+            <tr>
+                <td class="round-title" colspan="3">ELIMINATOR ROUND</td>
+            </tr>
+            
+            <!-- Eliminator 1: 3rd vs 6th -->
+            <tr>
+                <td>2026-01-11</td>
+                <td class="match-cell">RAAJ<br>-<br>BIKASH/ANISH</td>
+                <td class="winner-cell">WINNER E1</td>
+            </tr>
+            
+            <!-- Spacer row -->
+            <tr class="empty-row">
+                <td colspan="3"></td>
+            </tr>
+            
+            <!-- Eliminator 2: 4th vs 5th -->
+            <tr>
+                <td>2026-01-11</td>
+                <td class="match-cell">BINAYA<br>-<br>DEV</td>
+                <td class="winner-cell">WINNER E2</td>
+            </tr>
+            
+            <!-- QUALIFIER ROUND -->
+            <tr>
+                <td class="round-title" colspan="3">QUALIFIER ROUND</td>
+            </tr>
+            
+            <!-- Spacer rows for bracket connections -->
+            <tr class="empty-row">
+                <td colspan="3"></td>
+            </tr>
+            
+            <!-- Qualifier 1: 1st vs 2nd -->
+            <tr>
+                <td>2026-01-12</td>
+                <td class="match-cell">AASHISH<br>-<br>WINNER E1</td>
+                <td class="winner-cell">TO FINAL</td>
+            </tr>
+            
+            <!-- Spacer row -->
+            <tr class="empty-row">
+                <td colspan="3"></td>
+            </tr>
+            
+            <!-- Qualifier 2: Loser Q1 vs Winner E2 -->
+            <tr>
+                <td>2026-01-12</td>
+                <td class="match-cell">PARU DAI<br>-<br>WINNER E2</td>
+                <td class="winner-cell">TO FINAL</td>
+            </tr>
+            
+            <!-- Spacer rows for bracket connections -->
+            <tr class="empty-row">
+                <td colspan="3"></td>
+            </tr>
+            <tr class="empty-row">
+                <td colspan="3"></td>
+            </tr>
+            
+            <!-- FINAL -->
+            <tr>
+                <td class="round-title" colspan="3">MPL FINAL</td>
+            </tr>
+            
+            <tr>
+                <td>2026-01-13</td>
+                <td class="match-cell">WINNER Q1<br>🏆- 🏆<br>WINNER Q2</td>
+                <td class="winner-cell">MPL CHAMPION</td>
+            </tr>
+        </table>
+        
+        
+        </div>
+    </div>
+</body>
+</html>
 
 
 
