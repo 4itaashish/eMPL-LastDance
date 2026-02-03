@@ -18,12 +18,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 5 team data - Group A
 const season5TeamsA = [
-  { name: "AASHISH", mp: 6, w: 5, d: 1, l: 0, gf: 21, ga: 8, gd: 13, pts: 16 },
-  { name: "SUNIL", mp: 4, w: 2, d: 0, l: 2, gf: 12, ga: 13, gd: -1, pts: 6 },
-  { name: "BIKASH", mp: 5, w: 2, d: 1, l: 2, gf: 10, ga: 11, gd: -1, pts: 7 },
-  { name: "RAAJ", mp: 6, w: 0, d: 1, l: 5, gf: 7, ga: 20, gd: -13, pts: 1 },
-  { name: "ANJAN", mp: 4, w: 1, d: 0, l: 3, gf: 6, ga: 8, gd: -2, pts: 3 },
-  { name: "DEV", mp: 5, w: 3, d: 1, l: 1, gf: 13, ga: 9, gd: 4, pts: 10 },
+  { name: "AASHISH", mp: 7, w: 6, d: 1, l: 0, gf: 26, ga: 8, gd: 18, pts: 19 },
+  { name: "SUNIL", mp: 5, w: 3, d: 0, l: 2, gf: 15, ga: 13, gd: 2, pts: 9 },
+  { name: "BIKASH", mp: 6, w: 3, d: 1, l: 2, gf: 13, ga: 11, gd: 2, pts: 10 },
+  { name: "RAAJ", mp: 10, w: 0, d: 1, l: 9, gf: 7, ga: 32, gd: -25, pts: 1 },
+  { name: "ANJAN", mp: 5, w: 2, d: 0, l: 3, gf: 9, ga: 8, gd: 1, pts: 6 },
+  { name: "DEV", mp: 7, w: 4, d: 1, l: 2, gf: 16, ga: 14, gd: 2, pts: 13 },
 ];
 
 // Season 5 team data - Group B
@@ -345,6 +345,7 @@ function highlightAashishMatches() {
 document.addEventListener("DOMContentLoaded", () => {
   setTimeout(highlightAashishMatches, 500)
 })
+
 
 
 
