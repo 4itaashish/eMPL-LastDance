@@ -24,11 +24,11 @@ const season5TeamsA = [
   { name: "PARU DAI", mp: 15, w: 5, d: 3, l: 7, gf: 43, ga: 42, gd: 1, pts: 18 },
   { name: "ANJAN", mp: 11, w: 5, d: 1, l: 5, gf: 36, ga: 32, gd: 4, pts: 16 },
   { name: "DEV", mp: 13, w: 3, d: 2, l: 8, gf: 29, ga: 42, gd: -13, pts: 11 },
-  { name: "BINAYA", mp: 13, w: 6, d: 3, l: 4, gf: 45, ga: 42, gd: 3, pts: 21 },
+  { name: "BINAYA", mp: 14, w: 7, d: 3, l: 4, gf: 47, ga: 43, gd: 4, pts: 24 },
   { name: "ASAL", mp: 16, w: 5, d: 0, l: 11, gf: 36, ga: 56, gd: -20, pts: 15 },
   { name: "ANISH", mp: 15, w: 9, d: 1, l: 5, gf: 48, ga: 45, gd: 3, pts: 28 },
   { name: "SADIP", mp: 15, w: 11, d: 0, l: 4, gf: 83, ga: 41, gd: 42, pts: 33 },
-  { name: "RAAJ", mp: 13, w: 6, d: 0, l: 7, gf: 32, ga: 52, gd: -20, pts: 18 },
+  { name: "RAAJ", mp: 14, w: 6, d: 0, l: 8, gf: 33, ga: 54, gd: -21, pts: 18 },
 ];
 
 // Season 5 team data - Group B
