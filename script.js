@@ -24,9 +24,9 @@ const season5TeamsA = [
   { name: "PARU DAI", mp: 18, w: 5, d: 5, l: 8, gf: 50, ga: 51, gd: -1, pts: 20 },
   { name: "ANJAN", mp: 17, w: 9, d: 3, l: 5, gf: 60, ga: 46, gd: 14, pts: 30 },
   { name: "DEV", mp: 15, w: 5, d: 2, l: 8, gf: 35, ga: 46, gd: -11, pts: 17 },
-  { name: "BINAYA", mp: 14, w: 7, d: 3, l: 4, gf: 47, ga: 43, gd: 4, pts: 24 },
+  { name: "BINAYA", mp: 15, w: 8, d: 3, l: 4, gf: 52, ga: 44, gd: 8, pts: 27 },
   { name: "ASAL", mp: 19, w: 5, d: 1, l: 13, gf: 42, ga: 69, gd: -27, pts: 16 },
-  { name: "ANISH", mp: 16, w: 9, d: 2, l: 5, gf: 49, ga: 46, gd: 3, pts: 29 },
+  { name: "ANISH", mp: 17, w: 9, d: 2, l: 6, gf: 50, ga: 51, gd: -1, pts: 29 },
   { name: "SADIP", mp: 18, w: 12, d: 1, l: 5, gf: 96, ga: 52, gd: 44, pts: 37 },
   { name: "RAAJ", mp: 17, w: 6, d: 1, l: 10, gf: 39, ga: 68, gd: -29, pts: 19 },
 ];
