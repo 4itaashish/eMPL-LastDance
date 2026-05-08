@@ -18,17 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 5 team data - Group A
 const season5TeamsA = [
-  { name: "AASHISH", mp: 20, w: 14, d: 2, l: 4, gf: 80, ga: 44, gd: 36, pts: 44 },
-  { name: "SUNIL", mp: 20, w: 4, d: 6, l: 10, gf: 52, ga: 62, gd: -10, pts: 18 },
-  { name: "BIKASH", mp: 20, w: 4, d: 2, l: 14, gf: 54, ga: 90, gd: -36, pts: 14 },
-  { name: "PARU DAI", mp: 20, w: 6, d: 5, l: 9, gf: 56, ga: 55, gd: 1, pts: 23 },
-  { name: "ANJAN", mp: 20, w: 12, d: 3, l: 5, gf: 70, ga: 49, gd: 21, pts: 39 },
-  { name: "DEV", mp: 20, w: 6, d: 2, l: 12, gf: 39, ga: 59, gd: -20, pts: 20 },
-  { name: "BINAYA", mp: 20, w: 10, d: 5, l: 5, gf: 66, ga: 54, gd: 12, pts: 35 },
-  { name: "ASAL", mp: 20, w: 5, d: 1, l: 14, gf: 42, ga: 69, gd: -27, pts: 16 },
-  { name: "ANISH", mp: 20, w: 11, d: 2, l: 7, gf: 59, ga: 63, gd: -4, pts: 35 },
-  { name: "SADIP", mp: 20, w: 13, d: 2, l: 5, gf: 106, ga: 59, gd: 47, pts: 41 },
-  { name: "RAAJ", mp: 20, w: 8, d: 2, l: 10, gf: 48, ga: 71, gd: -23, pts: 26 },
+  { name: "AASHISH(BRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "BIKASH(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "PARU DAI(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "ANJAN(FRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "DEV(BRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "BINAYA(ARG)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "BIKASH(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "ASAL(POR)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "ANISH(FRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "SADIP(ENG)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "RAAJ(FRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
+  { name: "SANE(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
 ];
 
 // Season 5 team data - Group B
