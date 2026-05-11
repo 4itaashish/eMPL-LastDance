@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 5 team data - Group A
 const season5TeamsA = [
-  { name: "AASHISH(BRA)", mp: 1, w: 1, d: 0, l: 0, gf: 5, ga: 4, gd: 1, pts: 3 },
+  { name: "AASHISH(BRA)", mp: 2, w: 2, d: 0, l: 0, gf: 12, ga: 5, gd: 7, pts: 6 },
   { name: "PARU DAI(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   { name: "ANJAN(FRA)", mp: 1, w: 0, d: 0, l: 1, gf: 4, ga: 5, gd: -1, pts: 0 },
   { name: "DEV(BRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
@@ -27,7 +27,7 @@ const season5TeamsA = [
   { name: "ASAL(POR)", mp: 1, w: 0, d: 0, l: 1, gf: 0, ga: 1, gd: -1, pts: 0 },
   { name: "ANISH(FRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   { name: "SADIP(ENG)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
-  { name: "RAAJ(FRA)", mp: 1, w: 1, d: 0, l: 0, gf: 1, ga: 0, gd: 1, pts: 3 },
+  { name: "RAAJ(FRA)", mp: 2, w: 1, d: 0, l: 1, gf: 2, ga: 7, gd: -5, pts: 3 },
   { name: "SANE(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
 ];
 
