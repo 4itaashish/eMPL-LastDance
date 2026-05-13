@@ -20,11 +20,11 @@ document.addEventListener("DOMContentLoaded", () => {
 const season5TeamsA = [
   { name: "AASHISH(BRA)", mp: 3, w: 3, d: 0, l: 0, gf: 18, ga: 9, gd: 9, pts: 9 },
   { name: "PARU DAI(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
-  { name: "ANJAN(FRA)", mp: 2, w: 1, d: 0, l: 1, gf: 8, ga: 7, gd: 1, pts: 3 },
+  { name: "ANJAN(FRA)", mp: 3, w: 1, d: 0, l: 2, gf: 12, ga: 12, gd: 0, pts: 3 },
   { name: "DEV(BRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   { name: "BINAYA(ARG)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   { name: "BIKASH(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
-  { name: "ASAL(POR)", mp: 2, w: 0, d: 0, l: 2, gf: 2, ga: 5, gd: -3, pts: 0 },
+  { name: "ASAL(POR)", mp: 3, w: 1, d: 0, l: 2, gf: 7, ga: 9, gd: -2, pts: 3 },
   { name: "ANISH(FRA)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
   { name: "SADIP(ENG)", mp: 2, w: 2, d: 0, l: 0, gf: 10, ga: 2, gd: 8, pts: 6 },
   { name: "RAAJ(FRA)", mp: 5, w: 1, d: 0, l: 4, gf: 8, ga: 23, gd: -15, pts: 3 },
