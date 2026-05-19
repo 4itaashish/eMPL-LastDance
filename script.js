@@ -18,10 +18,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Season 5 team data - Group A
 const season5TeamsA = [
-  { name: "AASHISH(BRA)", mp: 7, w: 7, d: 0, l: 0, gf: 47, ga: 21, gd: 26, pts: 21 },
+  { name: "AASHISH(BRA)", mp: 8, w: 8, d: 0, l: 0, gf: 54, ga: 22, gd: 32, pts: 24 },
   { name: "PARU DAI(ESP)", mp: 5, w: 5, d: 0, l: 0, gf: 28, ga: 14, gd: 14, pts: 15 },
   { name: "ANJAN(FRA)", mp: 4, w: 2, d: 0, l: 2, gf: 16, ga: 15, gd: 1, pts: 6 },
-  { name: "DEV(BRA)", mp: 3, w: 1, d: 0, l: 2, gf: 11, ga: 10, gd: 1, pts: 3 },
+  { name: "DEV(BRA)", mp: 4, w: 1, d: 0, l: 3, gf: 12, ga: 16, gd: -4, pts: 3 },
   { name: "BINAYA(ARG)", mp: 4, w: 3, d: 0, l: 1, gf: 16, ga: 11, gd: 5, pts: 9 },
   { name: "BIKASH(ESP)", mp: 4, w: 0, d: 1, l: 3, gf: 11, ga: 24, gd: -13, pts: 1 },
   { name: "ASAL(POR)", mp: 9, w: 1, d: 1, l: 7, gf: 18, ga: 35, gd: -17, pts: 4 },
