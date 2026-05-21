@@ -28,7 +28,6 @@ const season5TeamsA = [
   { name: "ANISH(FRA)", mp: 4, w: 3, d: 0, l: 1, gf: 15, ga: 14, gd: 1, pts: 9 },
   { name: "SADIP(ENG)", mp: 6, w: 4, d: 0, l: 2, gf: 25, ga: 16, gd: 9, pts: 12 },
   { name: "RAAJ(FRA)", mp: 12, w: 2, d: 0, l: 10, gf: 31, ga: 58, gd: -27, pts: 6 },
-  { name: "SANEY(ESP)", mp: 0, w: 0, d: 0, l: 0, gf: 0, ga: 0, gd: 0, pts: 0 },
 ];
 
 // Season 5 team data - Group B
